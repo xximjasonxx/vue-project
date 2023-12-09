@@ -1,6 +1,16 @@
 <script setup>
+import axios from 'axios'
+
 function sendRequest() {
-  alert("hello world");
+  axios.patch('http://172.203.18.182')
+    .then(response => {
+      console.log(response);
+      alert('success');
+    })
+    .catch(error => {
+      console.error(error);
+      alert('fail');
+    })
 }
 </script>
 
