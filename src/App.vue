@@ -1,4 +1,7 @@
 <script setup>
+function sendRequest() {
+  alert("hello world");
+}
 </script>
 
 <template>
@@ -6,7 +9,7 @@
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
-      <button>Send Request</button>
+      <button @click="sendRequest">Send Request</button>
     </div>
   </header>
 </template>
